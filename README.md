@@ -5,7 +5,7 @@ Plugin de GoldHEN para PS4 que acompaña a **AFR** para gestionar mods `.pak` de
 **No carga los mods**: eso lo hace AFR. Este plugin solo los gestiona y avisa.
 
 ## Probado
-Solo en una PS4 (modelo y firmware sin registrar) con GoldHEN 2.4b18.12, Days Gone `CUSA08966` y 5 mods. No se probó en otras consolas, firmwares, regiones ni versiones del juego. Úsalo bajo tu responsabilidad.
+Solo en una PS4 Slim, firmware 12.00, con GoldHEN 2.4b18.12, Days Gone `CUSA08966` y 5 mods (datos dados por el autor). No se probó en otras consolas, firmwares, regiones ni versiones del juego. Úsalo bajo tu responsabilidad.
 
 ## Requisitos
 - GoldHEN con el plugin AFR instalado y funcionando.
@@ -35,6 +35,11 @@ Se crea solo la primera vez. Claves:
 
 ## Modo seguro
 Cada arranque suma 1 a `modloader/estado.txt`; si el juego sigue abierto 60 segundos, vuelve a 0. Con 3 arranques seguidos que no llegan a 60 s, los mods se desactivan en el siguiente arranque (el juego corre sin mods). Para volver: **borra `estado.txt`**. Ojo: abrir y cerrar el juego rápido 3 veces también lo activa.
+
+## Si algo sale mal
+- El juego se cierra al arrancar: quita `daysgone_modloader.prx` de `/data/GoldHEN/plugins/` (o su linea en `plugins.ini`), o desactiva el mod nuevo con `disable=` en `mods.ini`.
+- Ves `MODO SEGURO`: borra `/data/GoldHEN/modloader/estado.txt`.
+- Para pedir ayuda, adjunta `manager.txt` y `loaded.txt`.
 
 ## Límites conocidos
 - El análisis de choques solo entiende pak versión 3; otros formatos aparecen como "sin analizar".
