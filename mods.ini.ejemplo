@@ -1,0 +1,4 @@
+; daysgone_modloader - ejemplo de mods.ini
+;disable=chunk1_p.pak
+hide_startuppackages=0
+safe_mode=1
