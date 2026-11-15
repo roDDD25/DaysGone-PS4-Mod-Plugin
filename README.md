@@ -49,3 +49,5 @@ Cada arranque suma 1 a `modloader/estado.txt`; si el juego sigue abierto 60 segu
 Licencia: GPL-3.0 (ver el archivo LICENSE). El codigo fuente esta en la carpeta source. Este proyecto no está afiliado a Sony, Bend Studio ni a los autores de GoldHEN o AFR.
 
 Para recompilar: la carpeta source solo tiene el codigo de este plugin. Se compila con GoldHEN_Plugins_Repository (GPL-3.0, de ahi viene common/plugin_common.c), GoldHEN_Plugins_SDK (MIT) y el toolchain OpenOrbis; build.ps1 muestra el orden de compilacion.
+## Contribuir y contacto
+Los fallos y propuestas van en la pestaña Issues. Para un reporte, adjunta manager.txt y loaded.txt (carpeta /data/GoldHEN/modloader/).
